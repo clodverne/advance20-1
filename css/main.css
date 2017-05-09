@@ -259,6 +259,9 @@ header span {
   html {
     font-size: 9px;
   }
+  header {
+  height: 100%;
+  }
 
   .fa-play-circle-o {
     display: none;
