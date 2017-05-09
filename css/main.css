@@ -1,0 +1,266 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  height: 100vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+header .caption {
+  margin-top: 11rem;
+}
+
+header .caption-col h2 {
+  font-size: 1.4rem;
+  font-family: 'Ubuntu',sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header .caption-col h1,
+header .caption-col h3 {
+  margin-top: 3.4rem;
+  font-size: 5.6rem;
+  font-family: 'Ubuntu',sans-serif;
+  color: #fff;
+  text-transform: none;
+  font-weight: 400;
+}
+
+header .caption-col h3 {
+  margin-top: 4.5rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+header .fa-play-circle-o {
+  margin-top: 7.5rem;
+  font-size: 12rem;
+  color: #fff;
+}
+
+header .form {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+header .form-col {
+  vertical-align: middle;
+}
+
+header .form-col .btn,
+header .form-col input {
+  display: inline-block;
+  line-height: 5rem;
+  padding: 0;
+  height: 5rem;
+}
+
+header .form-col input {
+  border: 1px solid #bbb;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  outline: 0;
+  width: 22rem;
+  margin-left: -.6rem;
+}
+
+header .form-col .btn {
+  margin-top: -.3rem;
+  margin-left: -.4rem;
+  width: 16rem;
+  background-color: #1abc9c;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-size: 1.8rem;
+  font-family: 'Ubuntu',sans-serif;
+  color: #fff;
+}
+
+header span {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  color: #fff;
+  text-transform: none;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+}
+
+::-moz-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+}
+
+:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+}
+
+:-moz-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+}
+
+.main {
+  height: 100vh;
+}
+
+.main-top {
+  padding: 0 2rem 0 12%;
+  line-height: 6rem;
+  box-shadow: 0 6px 16px -7px rgba(0,0,0,.19);
+}
+
+.main-top .logo {
+  margin: 0;
+  padding: 0;
+  padding-top: -2rem;
+}
+
+.main-top .logo,
+.main-top .menu,
+.main-top .right-menu {
+  text-align: center;
+}
+
+.main-top .menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-top .menu ul li {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-family: "Ubuntu";
+  color: #a69999;
+}
+
+.main-top .right-menu .fa-facebook,
+.main-top .right-menu .fa-twitter {
+  font-size: 2.7rem;
+  color: #3b5998;
+  margin-right: 2rem;
+}
+
+.main-top .right-menu .fa-twitter {
+  color: #00aced;
+}
+
+.main .main-cap,
+.main .main-task {
+  text-align: center;
+  margin-top: 11rem;
+}
+
+.main .main-cap h2 {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-family: "Ubuntu";
+  color: #a5a5a5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main .main-cap h1,
+.main p,
+.main span {
+  margin-top: 4rem;
+  font-size: 6.1rem;
+  font-family: "Ubuntu";
+  color: #4c4c4c;
+}
+
+.main .main-task {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.main p,
+.main span {
+  display: block;
+  margin-top: 3rem;
+  font-size: 2.7rem;
+}
+
+.main p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #939598;
+}
+
+@media (max-width:570px) {
+  html {
+    font-size: 9px;
+  }
+
+  .fa-play-circle-o {
+    display: none;
+  }
+}
